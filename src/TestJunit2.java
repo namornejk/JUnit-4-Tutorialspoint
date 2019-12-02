@@ -27,6 +27,12 @@ public class TestJunit2 extends TestCase  {
         System.out.println("Updated Test Case Name = "+ newName);
     }
 
+    @Test
+    public void testMultiply(){
+        double result = fValue1*fValue2;
+        assertEquals(6.0, result);
+    }
+
     //tearDown used to close the connection or clean up activities
     public void tearDown(  ) {
     }
